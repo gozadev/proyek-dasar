@@ -1,0 +1,450 @@
+INFO - 2024-10-12 19:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 19:40:39 --> ErrorException: Undefined array key "HTTP_REFERER"
+[Method: POST, Route: generator/generate]
+in APPPATH/Controllers/Generator/Generator.php on line 229.
+ 1 APPPATH/Controllers/Generator/Generator.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "HTTP_REFERER"', '/Users/itdevaws/Sites/localhost/newtemp/app/Controllers/Generator/Generator.php', 229)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Generator\Generator->generate()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generator\Generator))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-12 19:41:34 --> ParseError: syntax error, unexpected token "function", expecting ")"
+[Method: POST, Route: generator/generate]
+in APPPATH/Config/Routes.php on line 90.
+ 1 SYSTEMPATH/CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 19:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 19:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 19:42:54 --> ParseError: syntax error, unexpected token "]"
+[Method: GET, Route: penilaian]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 45.
+ 1 FCPATH/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/Users/itdevaws/Sites/localhost/newtemp/vendor/composer/../../app/Controllers/Penilaian/PenilaianController.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\Penilaian\\PenilaianController')
+ 3 SYSTEMPATH/CodeIgniter.php(887): class_exists('\\App\\Controllers\\Penilaian\\PenilaianController', true)
+ 4 SYSTEMPATH/CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 19:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 19:43:16 --> ErrorException: Attempt to read property "id_menu" on null
+[Method: GET, Route: penilaian]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 30.
+ 1 APPPATH/Controllers/Penilaian/PenilaianController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_menu" on null', '/Users/itdevaws/Sites/localhost/newtemp/app/Controllers/Penilaian/PenilaianController.php', 30)
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 19:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 19:46:27 --> ErrorException: Undefined variable $menuId
+[Method: GET, Route: penilaian]
+in APPPATH/Views/Penilaian/PenilaianView.php on line 150.
+ 1 APPPATH/Views/Penilaian/PenilaianView.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menuId', '/Users/itdevaws/Sites/localhost/newtemp/app/Views/Penilaian/PenilaianView.php', 150)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/newtemp/app/Views/Penilaian/PenilaianView.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('Penilaian/PenilaianView', [], true)
+ 5 APPPATH/Controllers/Penilaian/PenilaianController.php(47): view('Penilaian/PenilaianView', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 19:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:03:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: penilaian/all-data]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 57.
+ 1 APPPATH/Controllers/Penilaian/PenilaianController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/Users/itdevaws/Sites/localhost/newtemp/app/Controllers/Penilaian/PenilaianController.php', 57)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-12 20:04:01 --> mysqli_sql_exception: Not unique table/alias: 'tb02_pg' in /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tb02_pg...', 0)
+#1 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb02_pg...')
+#2 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb02_pg...')
+#3 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg...', Array, false)
+#4 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/itdevaws/Sites/localhost/newtemp/app/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', Array)
+#6 /Users/itdevaws/Sites/localhost/newtemp/app/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+#7 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+#8 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+#9 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/itdevaws/Sites/localhost/newtemp/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-10-12 20:04:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'tb02_pg'
+[Method: GET, Route: penilaian/all-data]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = :t3.user_id:
+ORDER BY `nik` DESC
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-12 20:04:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'tb02_pg'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `nik` DESC
+ LIMIT 10')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `nik` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = :t3.user_id:
+ORDER BY `nik` DESC
+ LIMIT 10', [...], false)
+ 4 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-12 20:04:01 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'tb02_pg'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `nik` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `nik` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `nik` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = :t3.user_id:
+ORDER BY `nik` DESC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-12 20:05:14 --> mysqli_sql_exception: Not unique table/alias: 'tb02_pg' in /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tb02_pg...', 0)
+#1 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb02_pg...')
+#2 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb02_pg...')
+#3 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg...', Array, false)
+#4 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/itdevaws/Sites/localhost/newtemp/app/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', Array)
+#6 /Users/itdevaws/Sites/localhost/newtemp/app/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+#7 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+#8 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+#9 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/itdevaws/Sites/localhost/newtemp/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/itdevaws/Sites/localhost/newtemp/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-10-12 20:05:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'tb02_pg'
+[Method: GET, Route: penilaian/all-data]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = :t3.user_id:
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-12 20:05:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'tb02_pg'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = :t3.user_id:
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10', [...], false)
+ 4 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-12 20:05:14 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'tb02_pg'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = 11
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tb02_pg`.`nik`, `tb02_pg`.`nipk`, `tb02_pg`.`j_pg`, `tb02_pg`.`lk_pg`, `tb02_pg`.`nm_pg`
+FROM `tb02_pg`
+JOIN `tb01_pnv` ON `t3`.`id_pnv` = `tb01_pnv`.`id_pnv`
+JOIN `tb02_pg` ON `tb01_pnv`.`id_pnv` = `tb02_pg`.`id_pnv`
+WHERE `t3`.`user_id` = :t3.user_id:
+ORDER BY `tb02_pg`.`nik` DESC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Models/Penilaian/PenilaianModel.php(28): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH/Controllers/Penilaian/PenilaianController.php(64): App\Models\Penilaian\PenilaianModel->getData(10, 0, '')
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->allData()
+ 9 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+10 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:27:29 --> ErrorException: Undefined variable $masterMenu
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Views/Template/sidebar.php on line 85.
+ 1 APPPATH/Views/Template/sidebar.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $masterMenu', '/Users/itdevaws/Sites/localhost/newtemp/app/Views/Template/sidebar.php', 85)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/newtemp/app/Views/Template/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/sidebar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(61): CodeIgniter\View\View->include('Template/sidebar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/newtemp/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('Penilaian/Quesioner', [], true)
+10 APPPATH/Controllers/Penilaian/PenilaianController.php(57): view('Penilaian/Quesioner', [])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->quesioner()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:39:59 --> Error: Class "App\Controllers\Penilaian\QuisonerModels" not found
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:40:52 --> Error: Class "App\Controllers\Penilaian\QuisonerModels" not found
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:41:43 --> Error: Class "App\Models\Penilaian\QuesionerModel" not found
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:42:19 --> Error: Class "App\Models\Penilaian\QuesionerModel" not found
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:42:20 --> Error: Class "App\Models\Penilaian\QuesionerModel" not found
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:42:48 --> Error: Class "App\Controllers\Penilaian\QuisonerModel" not found
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Penilaian\PenilaianController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-12 20:42:56 --> ErrorException: Undefined property: App\Controllers\Penilaian\PenilaianController::$quesioner
+[Method: GET, Route: penilaian/quesioner]
+in APPPATH/Controllers/Penilaian/PenilaianController.php on line 56.
+ 1 APPPATH/Controllers/Penilaian/PenilaianController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Penilaian\\PenilaianController::$quesioner', '/Users/itdevaws/Sites/localhost/newtemp/app/Controllers/Penilaian/PenilaianController.php', 56)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Penilaian\PenilaianController->quesioner()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian\PenilaianController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-12 20:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 20:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 21:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 22:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 22:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 22:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-12 22:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

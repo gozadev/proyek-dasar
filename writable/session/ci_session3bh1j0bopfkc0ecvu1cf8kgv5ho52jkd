@@ -1,0 +1,21 @@
+__ci_last_regenerate|i:1725955839;_ci_previous_url|s:40:"http://localhost/newtemp/index.php/Hello";isLoggedIn|b:1;fullname|s:10:"SuperAdmin";iduser|s:1:"1";aksesMenu|s:1:"-";aksesTombol|s:1:"-";role|s:11:"Super Admin";bagian|s:9:"Akuntansi";unit|s:1:"-";my_captcha|s:5:"XIC5E";__ci_vars|a:1:{s:4:"item";i:1725954513;}item|s:1362:"
+                      <div>
+                        <div class="alert alert-info" role="alert">
+                            Untuk mengonfigurasi route Anda, silakan lakukan langkah-langkah berikut:
+                        </div>
+
+                        <p>1. Buka file <code>Route</code> yang terletak di direktori <code>app/config</code> proyek CodeIgniter 4 Anda.</p>
+                        <p>2. Paste kan Script Dibawah ini didalam route  :</p>
+                        <pre><code>
+                        $routes->group('Hello', static function ($routes) {
+                            $routes->get('/', 'Hello\HelloController::index',['filter' => 'authfilter']);
+                            $routes->post('all-data', 'Hello\HelloController::allData',['filter' => 'authfilter']); 
+                            $routes->post('get-data-one', 'Hello\HelloController::getDataOne',['filter' => 'authfilter']);  
+                            $routes->post('store',  'Hello\HelloController::storeData',['filter' => 'authfilter']); 
+                            $routes->post('delete-data','Hello \HelloController::remove',['filter' => 'authfilter']);
+                        });
+                        </code></pre>
+                        <p>3. akses Url berikut http://localhost/newtemp/Hello </p>
+                 
+                    </div>
+                    ";

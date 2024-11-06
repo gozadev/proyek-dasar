@@ -1,0 +1,325 @@
+ERROR - 2024-11-05 09:19:38 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siap' in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:187
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(187): mysqli->real_connect('localhost', 'root', 'root', 'db_siap', 3306, '', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php(40): CodeIgniter\Database\BaseConnection->query('SHOW DATABASES ...')
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /Users/itdevaws/Sites/localhost/siap/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siap' in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php(40): CodeIgniter\Database\BaseConnection->query('SHOW DATABASES ...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /Users/itdevaws/Sites/localhost/siap/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 {main}
+ERROR - 2024-11-05 09:19:38 --> DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siap'
+ERROR - 2024-11-05 09:25:52 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_siap', 3306, '', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-11-05 09:28:40 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_siap', 3306, '', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-11-05 09:29:27 --> mysqli_sql_exception: Table 'db_siap.tb_maintenance' doesn't exist in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT `mode_ma...', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `mode_ma...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `mode_ma...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `mode_ma...', Array, false)
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php(45): CodeIgniter\Model->__call('get', Array)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Home->index()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/itdevaws/Sites/localhost/siap/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-11-05 09:29:27 --> DatabaseException: Table 'db_siap.tb_maintenance' doesn't exist
+ERROR - 2024-11-05 09:29:34 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_siap', 3306, '', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-11-05 09:31:33 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_siap', 3306, '', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-05 09:32:55 --> ErrorException: Attempt to read property "dr_maintenance" on null
+[Method: GET, Route: /]
+in APPPATH/Controllers/Home.php on line 48.
+ 1 APPPATH/Controllers/Home.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "dr_maintenance" on null', '/Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-11-05 09:42:49 --> mysqli_sql_exception: Table 'db_siap.tb_user' doesn't exist in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `tb...', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 /Users/itdevaws/Sites/localhost/siap/app/Database/Seeds/UserData.php(30): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/Seeder.php(147): App\Database\Seeds\UserData->run()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-11-05 09:49:00 --> mysqli_sql_exception: Column count doesn't match value count at row 2 in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `tb...', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 /Users/itdevaws/Sites/localhost/siap/app/Database/Seeds/SettingsData.php(29): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/Seeder.php(147): App\Database\Seeds\SettingsData->run()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-11-05 09:52:31 --> mysqli_sql_exception: Column count doesn't match value count at row 2 in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('INSERT INTO `tb...', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1836): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2225): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 /Users/itdevaws/Sites/localhost/siap/app/Database/Seeds/SettingsData.php(29): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/Seeder.php(147): App\Database\Seeds\SettingsData->run()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Commands/Database/Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /Users/itdevaws/Sites/localhost/siap/spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+INFO - 2024-11-05 09:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 09:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-05 10:05:22 --> mysqli_sql_exception: Table 'db_siap.tb_user' doesn't exist in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:312
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/itdevaws/Sites/localhost/siap/app/Controllers/Auth/AuthController.php(110): CodeIgniter\Model->__call('get', Array)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Auth\AuthController->prosesLogin()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/itdevaws/Sites/localhost/siap/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-11-05 10:05:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_siap.tb_user' doesn't exist
+[Method: POST, Route: proseslogin]
+in SYSTEMPATH/Database/BaseConnection.php on line 688.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'', [], false)
+ 2 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/Auth/AuthController.php(110): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->prosesLogin()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-05 10:05:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_siap.tb_user' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 317.
+ 1 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'')
+ 2 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'', [], false)
+ 4 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/Auth/AuthController.php(110): CodeIgniter\Model->__call('get', [])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->prosesLogin()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-05 10:05:22 --> [Caused by] mysqli_sql_exception: Table 'db_siap.tb_user' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 312.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(312): mysqli->query('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `email` = \'hero\' OR `username` = \'hero\'', [], false)
+ 5 SYSTEMPATH/Model.php(930): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Auth/AuthController.php(110): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->prosesLogin()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-05 10:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-05 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-05 10:09:10 --> ErrorException: Attempt to read property "mode_maintenance" on null
+[Method: GET, Route: dashboard/maintenance]
+in APPPATH/Controllers/Maintenance/MaintenanceController.php on line 59.
+ 1 APPPATH/Controllers/Maintenance/MaintenanceController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "mode_maintenance" on null', '/Users/itdevaws/Sites/localhost/siap/app/Controllers/Maintenance/MaintenanceController.php', 59)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Maintenance\MaintenanceController->index()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maintenance\MaintenanceController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-05 10:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
