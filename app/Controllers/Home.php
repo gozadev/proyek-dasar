@@ -52,8 +52,8 @@ class Home extends BaseController
              //   dd($this->request->getIPAddress());
                 if(strpos($MM->ip_address_access,$this->request->getIPAddress()) !== false){
                     // return view('FrontEnd/index');
-                   // return view('auth/index',$data);
-                    return view('auth/login3',$data);
+                    return view('auth/index',$data);
+                   // return view('auth/login3',$data);
                 }else{
                 
                     return view('errors/maintance',$data);
@@ -61,8 +61,8 @@ class Home extends BaseController
             
             }else{
                 // return view('FrontEnd/index');
-                //return view('auth/index',$data);
-                return view('auth/login3',$data);
+                return view('auth/index',$data);
+               // return view('auth/login3',$data);
             }
 
             } catch (DatabaseException $e) {
