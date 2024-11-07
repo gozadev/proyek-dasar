@@ -15,7 +15,7 @@ $routes->get('pass', 'Home::hashPassword'); // hash password
 $routes->get('/', 'Home::index');
 $routes->get('daftar', 'Home::daftar');
 //$routes->get('test', 'Home::test');
-$routes->post('test', 'Home::test');
+$routes->get('test', 'Home::test');
 
 // $routes->get('verfikasi', 'Home::verfikasi');
 

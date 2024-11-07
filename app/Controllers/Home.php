@@ -9,7 +9,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use Config\Maintenance;
 use CodeIgniter\I18n\Time;
-
+use App\Libraries\Captcha;
 use App\Models\User\UserModels;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 
@@ -18,12 +18,14 @@ class Home extends BaseController
 {
    
     protected $settingsModels;
+
+    protected $captcha;
    
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger) 
     {
         parent::initController($request, $response, $logger);
 
-       
+       $this->captcha = new Captcha(session()); 
         $this->settingsModels = new SettingsModels();
     
       
@@ -31,7 +33,7 @@ class Home extends BaseController
     }
     public function index()
     {
-
+  
         try {
             // Mencoba untuk terhubung ke database
             $db = \Config\Database::connect();
@@ -46,8 +48,10 @@ class Home extends BaseController
             $settings = $this->settingsModels->select('value as signUp')->where("uraian" , 'signUp')->get()->getRow();
             $data = [
                 'durasi' => $MM->dr_maintenance,
-                'signUp' => $settings->signUp
+                'signUp' => $settings->signUp,
+              
             ];
+          
             if($MM->value == 'Y'){
              //   dd($this->request->getIPAddress());
                 if(strpos($MM->ip_address_access,$this->request->getIPAddress()) !== false){
@@ -113,22 +117,7 @@ class Home extends BaseController
     public function test()
     {
 
-     $store = $this->request->getPost();
      
-     // Inisialisasi array untuk menyimpan nilai radio
-     $radio_values = [];
-
-    //  // Loop melalui semua data POST
-    //  foreach ($store as $key => $value) {
-    //      // Cek apakah key diawali dengan 'radio_'
-    //      if (strpos($key, 'radio_') === 0) {
-    //          // Masukkan ke dalam array radio_values
-    //          $radio_values[$key] = $value;
-    //      }
-    //  }
-
-     dd($store);
-   
     }
 
     private function incrementLoginAttempts($userId)
@@ -162,6 +151,11 @@ class Home extends BaseController
         \Config\Database::connect($config->defaultGroup);
      
     }
+
+    public function displayCaptcha() {
+      //  $captcha = new Captcha(session());
+       
+      }
 
         
 }
