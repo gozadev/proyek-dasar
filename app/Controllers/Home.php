@@ -39,41 +39,35 @@ class Home extends BaseController
             $db = \Config\Database::connect();
             $dbName = getEnv("database.default.database");
             $result = $db->query("SHOW DATABASES LIKE '$dbName'")->getResult();
-
-         
-      
-            // Jika berhasil, lakukan sesuatu atau tampilkan halaman sukses
-            // $MM = $this->maintenanceodels->select('mode_maintenance,ip_access,dr_maintenance')->get()->getRow();
             $MM = $this->settingsModels->select('value,ip_address_access,dr_maintenance')->where("uraian" , 'mode_maintenance')->get()->getRow();
             $settings = $this->settingsModels->select('value as signUp')->where("uraian" , 'signUp')->get()->getRow();
+            $tLogin = $this->settingsModels->select('value as tLogin')->where("uraian" , 'Login')->get()->getRow();
             $data = [
                 'durasi' => $MM->dr_maintenance,
-                'signUp' => $settings->signUp,
-              
+                'signUp' => $settings->signUp,             
             ];
           
             if($MM->value == 'Y'){
              //   dd($this->request->getIPAddress());
                 if(strpos($MM->ip_address_access,$this->request->getIPAddress()) !== false){
                     // return view('FrontEnd/index');
-                    return view('auth/index',$data);
-                   // return view('auth/login3',$data);
+                   // return view('auth/index',$data);
+                   return view('auth/login/login'.$tLogin->tLogin,$data);
                 }else{
                 
                     return view('errors/maintance',$data);
                 }
             
             }else{
-                // return view('FrontEnd/index');
-                return view('auth/index',$data);
-               // return view('auth/login3',$data);
+               
+                //return view('auth/index',$data);
+                return view('auth/login/login'.$tLogin->tLogin,$data);
             }
 
             } catch (DatabaseException $e) {
                 // Tangkap pengecualian koneksi database
                 log_message('error', 'DatabaseException: ' . $e->getMessage());
-            // return view('errors/database_error', ['message' => 'Tidak dapat terhubung ke database. Silakan periksa konfigurasi Anda.']);
-            // return redirect()->to(base_url('test'));
+            
                 return view('errors/databaseNotFound');
             } 
    
