@@ -23,6 +23,13 @@ class SettingsData extends Seeder
                 'ip_address_access'   => '127.0.0.1,127.0.0.0,::1',
                 'dr_maintenance'       => '-',
             ],
+            [
+                'set_id'        => 3,
+                'value'   => '1',
+                'uraian'          => 'Login',
+                'ip_address_access'   => '-',
+                'dr_maintenance'       => '-',
+            ],
         ];
 
         // Menggunakan Query Builder untuk memasukkan data
