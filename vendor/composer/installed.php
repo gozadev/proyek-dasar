@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'codeigniter4/appstarter',
-        'pretty_version' => 'v4.5.4',
-        'version' => '4.5.4.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '83549bd7135b2f7ffc2e0c84fbd2ea684cc64aef',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'codeigniter4/appstarter' => array(
-            'pretty_version' => 'v4.5.4',
-            'version' => '4.5.4.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '83549bd7135b2f7ffc2e0c84fbd2ea684cc64aef',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -25,6 +25,15 @@
             'reference' => '336e0781a0e5f6e0a72a5ebc1c76d99f1a8bd408',
             'type' => 'project',
             'install_path' => __DIR__ . '/../codeigniter4/framework',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'cossou/jasperphp' => array(
+            'pretty_version' => '2.8.0',
+            'version' => '2.8.0.0',
+            'reference' => 'd24bc69aaaf55beb2a76a0db2a572e81f6baee09',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../cossou/jasperphp',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

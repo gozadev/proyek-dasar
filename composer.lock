@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "657ac079313fab046eb8c29fe1d6992b",
+    "content-hash": "d91de51d1383f3b7ef20a4afc1bc31f9",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -79,6 +79,52 @@
                 "source": "https://github.com/codeigniter4/CodeIgniter4"
             },
             "time": "2024-07-27T08:31:38+00:00"
+        },
+        {
+            "name": "cossou/jasperphp",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cossou/JasperPHP.git",
+                "reference": "d24bc69aaaf55beb2a76a0db2a572e81f6baee09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cossou/JasperPHP/zipball/d24bc69aaaf55beb2a76a0db2a572e81f6baee09",
+                "reference": "d24bc69aaaf55beb2a76a0db2a572e81f6baee09",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JasperPHP": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hélder Duarte",
+                    "email": "cossou@gmail.com"
+                }
+            ],
+            "description": "Create Reports in PHP with JasperReports",
+            "homepage": "https://github.com/cossou/JasperPHP",
+            "keywords": [
+                "jasper",
+                "jasperreports",
+                "java",
+                "pdf",
+                "reports"
+            ],
+            "support": {
+                "issues": "https://github.com/cossou/JasperPHP/issues",
+                "source": "https://github.com/cossou/JasperPHP/tree/master"
+            },
+            "abandoned": "geekcom/phpjasper",
+            "time": "2018-11-16T11:45:31+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
