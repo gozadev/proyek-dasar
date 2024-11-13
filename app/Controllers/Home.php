@@ -14,12 +14,16 @@ use App\Models\User\UserModels;
 use CodeIgniter\Database\Exceptions\DatabaseException;
 
 
+
+
 class Home extends BaseController
 {
    
     protected $settingsModels;
 
     protected $captcha;
+
+   
    
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger) 
     {
@@ -27,8 +31,8 @@ class Home extends BaseController
 
        $this->captcha = new Captcha(session()); 
         $this->settingsModels = new SettingsModels();
+
     
-      
         
     }
     public function index()
@@ -111,6 +115,42 @@ class Home extends BaseController
     public function test()
     {
 
+        $data = [
+            'masterMenu' => 'Dashboard',
+            'subMenu' => '',
+           // 'userData' => $this->userModels->where(['user_id' => session()->get('iduser')])->get()->getRow()
+        ];
+        return view('test/testview',$data);
+        // $input = WRITEPATH . 'jasperFile/test.jasper'; 
+        //      $output = WRITEPATH . 'uploads/your_report';  
+        //     $options = [ 
+        //         'format' => ['pdf', 'rtf'] 
+        //     ];
+
+        //     $jasper = new PHPJasper;
+        //     $jasper->process(
+        //         $input,
+        //         $output,
+        //         $options
+        //     )->execute();
+            // // Tentukan path laporan .jasper atau .jrxml
+            // $input =WRITEPATH . 'jasperstarter/examples/Blank_A4_1.jrxml'; // Sesuaikan dengan path file laporan Anda
+            // $output = WRITEPATH . 'uploads/your_report'; // Folder writable untuk menyimpan hasil laporan
+    
+            // // Parameter jika diperlukan
+            // $parameters = [
+            //     // 'parameter1' => 'value1',
+            //     // 'parameter2' => 'value2',
+            // ];
+    
+            // // Format output
+            // $format = 'pdf'; // Bisa juga 'html', 'xls', dll
+    
+            // // Panggil fungsi generateReport dari library JasperReport
+            // $result = $this->jasperReport->generateReport($input, $output, $parameters, $format);
+    
+            // // Tampilkan hasil atau redirect
+            // echo "Laporan telah digenerate: " . $result;
      
     }
 

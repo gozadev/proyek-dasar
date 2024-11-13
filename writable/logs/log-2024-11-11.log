@@ -1,0 +1,419 @@
+INFO - 2024-11-11 14:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 14:46:54 --> ErrorException: Undefined property: App\Controllers\Home::$jasperReport
+[Method: GET, Route: test]
+in APPPATH/Controllers/Home.php on line 129.
+ 1 APPPATH/Controllers/Home.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$jasperReport', '/Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php', 129)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 14:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 14:48:47 --> Error: Call to undefined method JasperPHP\JasperPHP::setBinDir()
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 30.
+ 1 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 14:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 14:50:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 105.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(105): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(37): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], [...], false, '/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/bin/jasperstarter')
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 14:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 14:51:22 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 93.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(93): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(37): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], false, '/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/bin/jasperstarter')
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 14:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 14:51:47 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 93.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(93): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(37): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], false, '/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/bin/jasperstarter')
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:01:17 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 93.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(93): count(null)
+ 2 APPPATH/Libraries/JasperReport.php(37): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], null, [...], false, '/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/bin/jasperstarter')
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:01:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 93.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(93): count(null)
+ 2 APPPATH/Libraries/JasperReport.php(37): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], null, [...], false, '/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/bin/jasperstarter')
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:02:31 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 105.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(105): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(42): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], [...], false, [...])
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:02:33 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 105.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(105): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(42): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], [...], false, [...])
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:03:37 --> ErrorException: Undefined array key "driver"
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 107.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "driver"', '/Users/itdevaws/Sites/localhost/siap/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php', 107)
+ 2 APPPATH/Libraries/JasperReport.php(45): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], [...], [...], [...])
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:04:37 --> Exception: Invalid format!
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 69.
+ 1 APPPATH/Libraries/JasperReport.php(48): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...])
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:05:23 --> Exception: Invalid format!
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 69.
+ 1 APPPATH/Libraries/JasperReport.php(48): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...])
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:05:24 --> Exception: Invalid format!
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 69.
+ 1 APPPATH/Libraries/JasperReport.php(48): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...])
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:08:39 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 105.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(105): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(45): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], [...], false, [...])
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 15:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:11:50 --> ErrorException: Undefined variable $parameters
+[Method: GET, Route: test]
+in APPPATH/Controllers/Home.php on line 134.
+ 1 APPPATH/Controllers/Home.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $parameters', '/Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:12:10 --> ErrorException: Undefined variable $format
+[Method: GET, Route: test]
+in APPPATH/Controllers/Home.php on line 134.
+ 1 APPPATH/Controllers/Home.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $format', '/Users/itdevaws/Sites/localhost/siap/app/Controllers/Home.php', 134)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:12:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, bool given
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 105.
+ 1 FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php(105): count(false)
+ 2 APPPATH/Libraries/JasperReport.php(47): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...], [], false, [...])
+ 3 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:14:49 --> Exception: Invalid format!
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 69.
+ 1 APPPATH/Libraries/JasperReport.php(40): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...])
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperFile/test.jasper', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:17:52 --> Exception: Invalid format!
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 69.
+ 1 APPPATH/Libraries/JasperReport.php(40): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...])
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:17:53 --> Exception: Invalid format!
+[Method: GET, Route: test]
+in FCPATH/vendor/cossou/jasperphp/src/JasperPHP/JasperPHP.php on line 69.
+ 1 APPPATH/Libraries/JasperReport.php(40): JasperPHP\JasperPHP->process('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [...])
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:24:32 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:24:58 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:26:01 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:26:02 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:28:31 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:28:32 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:29:24 --> Error: Class "PhpJasper\PhpJasper" not found
+[Method: GET, Route: test]
+in APPPATH/Libraries/JasperReport.php on line 14.
+ 1 APPPATH/Controllers/Home.php(36): App\Libraries\JasperReport->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:30:22 --> PHPJasper\Exception\ErrorCommandExecutable: Exception in thread "main" java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$AppClassLoader cannot be cast to class java.net.URLClassLoader (jdk.internal.loader.ClassLoaders$AppClassLoader and java.net.URLClassLoader are in module java.base of loader 'bootstrap')   	at de.cenote.tools.classpath.ApplicationClasspath.add(ApplicationClasspath.java:75)   	at de.cenote.tools.classpath.ApplicationClasspath.add(ApplicationClasspath.java:65)   	at de.cenote.tools.classpath.ApplicationClasspath.addJars(ApplicationClasspath.java:134)   	at de.cenote.tools.classpath.ApplicationClasspath.addJarsRelative(ApplicationClasspath.java:151)   	at de.cenote.jasperstarter.App.processReport(App.java:178)   	at de.cenote.jasperstarter.App.main(App.java:109)   
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 251.
+ 1 APPPATH/Libraries/JasperReport.php(47): PHPJasper\PHPJasper->execute()
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:31:08 --> PHPJasper\Exception\InvalidInputFile: No input file
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 98.
+ 1 APPPATH/Libraries/JasperReport.php(30): PHPJasper\PHPJasper->compile('/Users/itdevaws/Sites/localhost/siap/app/Libraries/vendor/geekcom/phpjasper/examples/hello_world.jrxml')
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/app/Libraries/vendor/geekcom/phpjasper/examples/hello_world.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:32:16 --> PHPJasper\Exception\InvalidInputFile: No input file
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 98.
+ 1 APPPATH/Libraries/JasperReport.php(30): PHPJasper\PHPJasper->compile('/Users/itdevaws/Sites/localhost/siap/app/Libraries/vendor/geekcom/phpjasper/examples/hello_world.jrxml')
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:32:36 --> PHPJasper\Exception\InvalidInputFile: No input file
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 98.
+ 1 APPPATH/Libraries/JasperReport.php(30): PHPJasper\PHPJasper->compile('/Users/itdevaws/Sites/localhost/siap/app/Libraries/vendor/geekcom/examples/hello_world.jrxml')
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:32:37 --> PHPJasper\Exception\InvalidInputFile: No input file
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 98.
+ 1 APPPATH/Libraries/JasperReport.php(30): PHPJasper\PHPJasper->compile('/Users/itdevaws/Sites/localhost/siap/app/Libraries/vendor/geekcom/examples/hello_world.jrxml')
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 15:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 15:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:35:50 --> PHPJasper\Exception\InvalidInputFile: No input file
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 98.
+ 1 APPPATH/Libraries/JasperReport.php(35): PHPJasper\PHPJasper->compile('/Users/itdevaws/Sites/localhost/siap/vendor/geekcom/examples/hello_world.jrxml')
+ 2 APPPATH/Controllers/Home.php(134): App\Libraries\JasperReport->generateReport('/Users/itdevaws/Sites/localhost/siap/writable/jasperstarter/examples/Blank_A4_1.jrxml', '/Users/itdevaws/Sites/localhost/siap/writable/uploads/your_report', [], 'pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:57:58 --> Error: Class "App\Controllers\JasperReport" not found
+[Method: GET, Route: test]
+in APPPATH/Controllers/Home.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-11 15:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 15:58:25 --> PHPJasper\Exception\ErrorCommandExecutable: Exception in thread "main" java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$AppClassLoader cannot be cast to class java.net.URLClassLoader (jdk.internal.loader.ClassLoaders$AppClassLoader and java.net.URLClassLoader are in module java.base of loader 'bootstrap')   	at de.cenote.tools.classpath.ApplicationClasspath.add(ApplicationClasspath.java:75)   	at de.cenote.tools.classpath.ApplicationClasspath.add(ApplicationClasspath.java:65)   	at de.cenote.tools.classpath.ApplicationClasspath.addJars(ApplicationClasspath.java:134)   	at de.cenote.tools.classpath.ApplicationClasspath.addJarsRelative(ApplicationClasspath.java:151)   	at de.cenote.jasperstarter.App.processReport(App.java:178)   	at de.cenote.jasperstarter.App.main(App.java:109)   
+[Method: GET, Route: test]
+in FCPATH/vendor/geekcom/phpjasper/src/PHPJasper.php on line 251.
+ 1 APPPATH/Controllers/Home.php(131): PHPJasper\PHPJasper->execute()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

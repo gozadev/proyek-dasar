@@ -31,17 +31,18 @@ class MaintenanceController extends BaseController
         // ==============akses menu======================
         $this->userModels = new UserModels();
         $this->subMenuModels = new SubMenuModels();
-        $userAkses = $this->userModels->select('akses_menu')->where(['user_id' => session()->get('iduser')])->get()->getRow()->akses_menu;
-        $this->acMenuId = $this->subMenuModels->select('id_menu')->where(['cap_menu' => $this->subMenu])->get()->getRow()->id_menu;
+
+        // $userAkses = $this->userModels->select('akses_menu')->where(['user_id' => session()->get('iduser')])->get()->getRow()->akses_menu;
+        // $this->acMenuId = $this->subMenuModels->select('id_menu')->where(['cap_menu' => $this->subMenu])->get()->getRow()->id_menu;
            
        
-        if(session()->get('role') != 'Super Admin'){
+        // if(session()->get('role') != 'Super Admin'){
 
-            if(strpos( $userAkses ,$this->acMenuId) === false){
-                $response->redirect(base_url(session()->get('dashboard')));
-            }
+        //     if(strpos( $userAkses ,$this->acMenuId) === false){
+        //         $response->redirect(base_url(session()->get('dashboard')));
+        //     }
     
-        }
+        // }
         
         
     }
@@ -113,5 +114,30 @@ class MaintenanceController extends BaseController
             return redirect()->to(base_url(''));
         }
         
+    }
+
+    public function startServer()
+    {
+//         // // Jalankan Workerman WebSocket server
+//         $output = shell_exec('php /workerman/WebSocketServer.php start');
+//         // Display the list of all files and directories
+// echo "<pre>$output</pre>";
+
+        // return "Workerman server started!";
+// Perintah yang akan dijalankan
+$command = 'bash workerman/run-server.sh';
+
+// Menjalankan perintah dan menyimpan hasilnya
+$output = shell_exec($command);
+
+// Menampilkan hasil output
+if ($output) {
+    echo "Versi PHP yang terinstal:<br>";
+    echo nl2br($output);  // Menggunakan nl2br untuk memformat output dengan baris baru
+} else {
+    echo "Gagal menjalankan perintah php -v.";
+}
+
+
     }
 }

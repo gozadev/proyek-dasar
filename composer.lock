@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d91de51d1383f3b7ef20a4afc1bc31f9",
+    "content-hash": "5bb8c74eb14395f807b68a8bec7c6003",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -79,52 +79,6 @@
                 "source": "https://github.com/codeigniter4/CodeIgniter4"
             },
             "time": "2024-07-27T08:31:38+00:00"
-        },
-        {
-            "name": "cossou/jasperphp",
-            "version": "2.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cossou/JasperPHP.git",
-                "reference": "d24bc69aaaf55beb2a76a0db2a572e81f6baee09"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cossou/JasperPHP/zipball/d24bc69aaaf55beb2a76a0db2a572e81f6baee09",
-                "reference": "d24bc69aaaf55beb2a76a0db2a572e81f6baee09",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "JasperPHP": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hélder Duarte",
-                    "email": "cossou@gmail.com"
-                }
-            ],
-            "description": "Create Reports in PHP with JasperReports",
-            "homepage": "https://github.com/cossou/JasperPHP",
-            "keywords": [
-                "jasper",
-                "jasperreports",
-                "java",
-                "pdf",
-                "reports"
-            ],
-            "support": {
-                "issues": "https://github.com/cossou/JasperPHP/issues",
-                "source": "https://github.com/cossou/JasperPHP/tree/master"
-            },
-            "abandoned": "geekcom/phpjasper",
-            "time": "2018-11-16T11:45:31+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -237,6 +191,69 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.1"
             },
             "time": "2024-08-21T13:31:24+00:00"
+        },
+        {
+            "name": "workerman/workerman",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/workerman.git",
+                "reference": "df513f3fd274811ebb8358d05d7cec19ee8bd3e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/workerman/zipball/df513f3fd274811ebb8358d05d7cec19ee8bd3e1",
+                "reference": "df513f3fd274811ebb8358d05d7cec19ee8bd3e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "suggest": {
+                "ext-event": "For better performance. "
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "walkor",
+                    "email": "walkor@workerman.net",
+                    "homepage": "http://www.workerman.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An asynchronous event driven PHP framework for easily building fast, scalable network applications.",
+            "homepage": "http://www.workerman.net",
+            "keywords": [
+                "asynchronous",
+                "event-loop"
+            ],
+            "support": {
+                "email": "walkor@workerman.net",
+                "forum": "http://wenda.workerman.net/",
+                "issues": "https://github.com/walkor/workerman/issues",
+                "source": "https://github.com/walkor/workerman",
+                "wiki": "http://doc.workerman.net/"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/workerman",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/walkor",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-11-07T08:31:33+00:00"
         }
     ],
     "packages-dev": [

@@ -43,7 +43,8 @@ $routes->group('dashboard', ['filter' => 'authfilter'],  function ($routes) {
 // Route untuk Maintenance
 $routes->group('maintenance', static function ($routes) {
    $routes->post('setmode', 'Maintenance\MaintenanceController::setModeMaintenance',['filter' => 'authfilter']); // halaman login admin
-   $routes->get('durasimaintenance', 'Maintenance\MaintenanceController::cekMaintenance'); // halaman login admin
+   $routes->get('durasimaintenance', 'Maintenance\MaintenanceController::cekMaintenance');
+   $routes->get('onWorkerman', 'Maintenance\MaintenanceController::startServer'); 
 });
 
 $routes->group('generator', ['filter' => 'authfilter'],  function ($routes) {
