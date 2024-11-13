@@ -2144,3 +2144,756 @@ WARNING - 2024-11-13 12:27:01 --> [DEPRECATED] mb_strimwidth(): Passing null to 
 14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
 15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-13 14:12:37 --> Error: Call to undefined function App\Controllers\Maintenance\sendToWebSocket()
+[Method: GET, Route: maintenance/onWorkerman]
+in APPPATH/Controllers/Maintenance/MaintenanceController.php on line 140.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Maintenance\MaintenanceController->startServer()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maintenance\MaintenanceController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-13 14:13:04 --> Error: Class "App\Controllers\Maintenance\Client" not found
+[Method: GET, Route: maintenance/onWorkerman]
+in APPPATH/Controllers/Maintenance/MaintenanceController.php on line 148.
+ 1 APPPATH/Controllers/Maintenance/MaintenanceController.php(140): App\Controllers\Maintenance\MaintenanceController->sendToWebSocket('helloooo')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Maintenance\MaintenanceController->startServer()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maintenance\MaintenanceController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-13 14:13:24 --> Error: Class "WebSocket\Client" not found
+[Method: GET, Route: maintenance/onWorkerman]
+in APPPATH/Controllers/Maintenance/MaintenanceController.php on line 149.
+ 1 APPPATH/Controllers/Maintenance/MaintenanceController.php(141): App\Controllers\Maintenance\MaintenanceController->sendToWebSocket('helloooo')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Maintenance\MaintenanceController->startServer()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maintenance\MaintenanceController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:14:16 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:14:16 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:16:24 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:16:24 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:17:16 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:17:16 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:17:43 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:17:43 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:17:55 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:17:55 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:18:19 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:18:19 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:22:12 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:22:12 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:22:17 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:22:17 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:22:21 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:22:21 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:23:07 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:23:07 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:24:00 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:24:00 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:24:07 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:24:07 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:24:11 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:24:11 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1169): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:50:21 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:50:21 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:52:30 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:52:30 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-11-13 14:52:31 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 108.
+ 1 APPPATH/Views/Template/navbar.php(108): mb_strimwidth(null, 0, 15, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-11-13 14:52:31 --> [DEPRECATED] mb_strimwidth(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH/Views/Template/navbar.php on line 124.
+ 1 APPPATH/Views/Template/navbar.php(124): mb_strimwidth(null, 0, 10, '...')
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/navbar.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(487): CodeIgniter\View\View->render('Template/navbar', null, true)
+ 5 APPPATH/Views/Template/main_template.php(66): CodeIgniter\View\View->include('Template/navbar')
+ 6 SYSTEMPATH/View/View.php(234): include('/Users/itdevaws/Sites/localhost/siap/app/Views/Template/main_template.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('Template/main_template', [], true)
+ 9 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('test/testview', [], true)
+10 APPPATH/Controllers/Home.php(123): view('test/testview', [...])
+11 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Home->test()
+12 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:52:49 --> Lcobucci\JWT\Signer\InvalidKeyProvided: Key provided is shorter than 256 bits, only 120 bits provided
+[Method: GET, Route: create-token]
+in FCPATH/vendor/lcobucci/jwt/src/Signer/InvalidKeyProvided.php on line 44.
+ 1 FCPATH/vendor/lcobucci/jwt/src/Signer/Hmac.php(20): Lcobucci\JWT\Signer\InvalidKeyProvided::tooShort(256, 120)
+ 2 FCPATH/vendor/lcobucci/jwt/src/Token/Builder.php(116): Lcobucci\JWT\Signer\Hmac->sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgwNzY5LjU3MTU0LCJleHAiOjE3MzE0ODQzNjkuNTcxNTQsInVzZXJJZCI6MSwidXNlcm5hbWUiOiJ1c2VyX2V4YW1wbGUifQ', Object(Lcobucci\JWT\Signer\Key\InMemory))
+ 3 APPPATH/Controllers/Auth/AuthController.php(298): Lcobucci\JWT\Token\Builder->getToken(Object(Lcobucci\JWT\Signer\Hmac\Sha256), Object(Lcobucci\JWT\Signer\Key\InMemory))
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:54:09 --> Lcobucci\JWT\Signer\InvalidKeyProvided: Key provided is shorter than 256 bits, only 128 bits provided
+[Method: GET, Route: create-token]
+in FCPATH/vendor/lcobucci/jwt/src/Signer/InvalidKeyProvided.php on line 44.
+ 1 FCPATH/vendor/lcobucci/jwt/src/Signer/Hmac.php(20): Lcobucci\JWT\Signer\InvalidKeyProvided::tooShort(256, 128)
+ 2 FCPATH/vendor/lcobucci/jwt/src/Token/Builder.php(116): Lcobucci\JWT\Signer\Hmac->sign('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgwODQ5LjM5MTMxMywiZXhwIjoxNzMxNDg0NDQ5LjM5MTMxMywidXNlcklkIjoxLCJ1c2VybmFtZSI6InVzZXJfZXhhbXBsZSJ9', Object(Lcobucci\JWT\Signer\Key\InMemory))
+ 3 APPPATH/Controllers/Auth/AuthController.php(298): Lcobucci\JWT\Token\Builder->getToken(Object(Lcobucci\JWT\Signer\Hmac\Sha256), Object(Lcobucci\JWT\Signer\Key\InMemory))
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:55:20 --> Error: Call to undefined method App\Controllers\Auth\AuthController::respond()
+[Method: GET, Route: create-token]
+in APPPATH/Controllers/Auth/AuthController.php on line 308.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-13 14:56:16 --> ErrorException: Cannot use CodeIgniter\RESTful\ResourceController as ResourceController because the name is already in use
+[Method: GET, Route: create-token]
+in APPPATH/Controllers/Auth/AuthController.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-11-13 14:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:56:28 --> Error: Call to undefined method App\Controllers\Auth\AuthController::respond()
+[Method: GET, Route: create-token]
+in APPPATH/Controllers/Auth/AuthController.php on line 309.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 14:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 15:17:51 --> Error: Call to undefined function App\Controllers\Auth\createToken()
+[Method: GET, Route: create-token]
+in APPPATH/Controllers/Auth/AuthController.php on line 280.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 15:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 15:38:51 --> Error: Class "Lcobucci\JWT\Validation\Constraint\Before" not found
+[Method: GET, Route: create-token]
+in APPPATH/Helpers/jwt_helper.php on line 64.
+ 1 APPPATH/Controllers/Auth/AuthController.php(289): verifyToken('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgzMjU5LjAzMzgzMiwiZXhwIjoxNzMxNDg2ODU5LjAzMzgzMiwidXNlcklkIjoxLCJ1c2VybmFtZSI6InVzZXJfZXhhbXBsZSJ9.EvSwhs2vH_ulwrvuXNpy3K_88pXn0cd2AjeQxxRcYvw')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 15:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 15:40:29 --> Error: Class "SignedWith" not found
+[Method: GET, Route: create-token]
+in APPPATH/Helpers/jwt_helper.php on line 66.
+ 1 APPPATH/Controllers/Auth/AuthController.php(289): verifyToken('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgzMjU5LjAzMzgzMiwiZXhwIjoxNzMxNDg2ODU5LjAzMzgzMiwidXNlcklkIjoxLCJ1c2VybmFtZSI6InVzZXJfZXhhbXBsZSJ9.EvSwhs2vH_ulwrvuXNpy3K_88pXn0cd2AjeQxxRcYvw')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 15:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 15:40:50 --> Error: Call to undefined method Lcobucci\JWT\Token\Plain::getClaim()
+[Method: GET, Route: create-token]
+in APPPATH/Controllers/Auth/AuthController.php on line 293.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 15:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 15:42:05 --> ErrorException: Undefined variable $token
+[Method: GET, Route: create-token]
+in APPPATH/Controllers/Auth/AuthController.php on line 292.
+ 1 APPPATH/Controllers/Auth/AuthController.php(292): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', '/Users/itdevaws/Sites/localhost/siap/app/Controllers/Auth/AuthController.php', 292)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth\AuthController->createToken()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth\AuthController))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-13 15:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 15:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

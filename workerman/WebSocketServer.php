@@ -21,12 +21,6 @@ $ws_worker->onConnect = function($connection) use (&$clients) {
     echo "Client terhubung dengan ID: {$connection->id}\n";
 };
 
-// Menangani koneksi
-// $ws_worker->onMessage = function($connection, $data) {
-//     // Mengirim pesan kembali kepada client
-//     $connection->send('Hello from Workerman: ' . $data);
-// };
-
 // Ketika menerima pesan dari client
 $ws_worker->onMessage = function($connection, $data) use (&$clients) {
     // Decode data JSON dari client
@@ -48,7 +42,16 @@ $ws_worker->onMessage = function($connection, $data) use (&$clients) {
         }
     } else {
         // Jika data tidak valid, kirim pesan error kembali ke client
-        $connection->send("Format pesan tidak valid. Harus ada 'to' dan 'message'.");
+        // $connection->send("Format pesan tidak valid. Harus ada 'to' dan 'message'.");
+        // $ws_worker->send($data);
+        echo "Received: $data\n";
+
+          // Broadcast ke semua client
+            foreach ($clients as $client) {
+                if ($client !== $connection) {  // Tidak mengirimkan pesan ke client yang mengirim
+                    $client->send($data);  // Kirim pesan ke client lain
+                }
+            }
     }
 };
 

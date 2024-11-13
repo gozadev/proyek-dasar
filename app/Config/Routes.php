@@ -28,6 +28,7 @@ $routes->get('captcha/(:any)', 'Auth\AuthController::generateCaptcha/$1'); // ge
 $routes->post('akses-tombol', 'Auth\AuthController::aksesTombol',['filter' => 'authfilter']);
 $routes->get('akun-akses', 'Auth\AuthController::tidakAdaAkses',['filter' => 'authfilter']);
 
+$routes->get('create-token', 'Auth\AuthController::createToken');
 
 // Route untuk dashboard 
 $routes->group('dashboard', ['filter' => 'authfilter'],  function ($routes) {

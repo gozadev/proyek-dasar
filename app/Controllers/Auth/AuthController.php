@@ -7,6 +7,15 @@ use App\Models\User\UserModels;
 use App\Models\Menu\MenuModels;
 use App\Libraries\Captcha;
 use CodeIgniter\I18n\Time;
+
+
+use CodeIgniter\RESTful\ResourceController;
+use Lcobucci\JWT\Configuration;
+use Lcobucci\JWT\Signer\Hmac\Sha256;
+use Lcobucci\JWT\Signer\Key\InMemory;
+use DateTimeImmutable;
+
+
 class AuthController extends BaseController
 {
 
@@ -262,6 +271,52 @@ class AuthController extends BaseController
         // $menuId = 5;
        return getAcctombol(session()->get("iduser"),$dataId,$menuId);
        //dd( getAcctombol(7,$dataId,$menuId));
+
+    }
+
+    public function createToken()
+    {
+    //    // Memanggil fungsi createToken dari helper
+    //    $token = createToken();
+
+    //    // Mengembalikan token sebagai JSON response
+    //    return $this->response->setJSON([
+    //        'status' => 'success',
+    //        'token' => $token,
+    //    ]);
+
+ // Verifikasi token
+ $verifiedToken = verifyToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgzODAzLjIzODQ1OCwiZXhwIjoxNzMxNDg3NDAzLjIzODQ1OCwidXNlcklkIjoxLCJ1c2VybmFtZSI6InVzZXJfZXhhbXBsZSJ9.Pkx3lel0K1VApyABiEMrccqDuKyfGwZ953qvlYL1rnE");
+            
+// Verifikasi token
+//$verifiedToken = verifyToken($token);
+            
+if ($verifiedToken) {
+    // Token valid, dapatkan klaim
+    $claims = $verifiedToken->claims(); // Ambil semua klaim
+
+    // Ambil klaim userId dan username
+    $userId = $claims->get('userId');
+    $username = $claims->get('username');
+    
+    // Lakukan tindakan yang diinginkan
+    return $this->response->setJSON([
+        'status' => 'success',
+        'message' => 'Token valid!',
+        'userId' => $userId,
+        'username' => $username,
+    ]);
+} else {
+    // Token tidak valid
+    return $this->response->setJSON([
+        'status' => 'error',
+        'message' => 'Token tidak valid atau kadaluarsa.',
+    ]);
+}
+
+
+
+
 
     }
 

@@ -23,3 +23,35 @@
 2024-11-13 04:19:20 pid:78192 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
 2024-11-13 05:49:00 pid:78192 Workerman[WebSocketServer.php] stopping ...
 2024-11-13 05:49:00 pid:78192 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:12:32 pid:79825 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:13:52 pid:79825 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:13:52 pid:79825 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:14:06 pid:79951 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:16:17 pid:79951 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:16:17 pid:79951 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:16:19 pid:80056 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:16:24 pid:80057 Error: Call to a member function send() on null in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:46
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), 'Hello server')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(51): Workerman\Worker::runAll()
+#7 {main}
+2024-11-13 06:16:24 pid:80056 worker[none:80057] exit with status 64000
+2024-11-13 06:17:11 pid:80056 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:17:11 pid:80056 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:17:13 pid:80117 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:22:08 pid:80117 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:22:08 pid:80117 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:22:10 pid:80272 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:23:02 pid:80272 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:23:02 pid:80272 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:23:03 pid:80322 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:23:55 pid:80322 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:23:55 pid:80322 Workerman[WebSocketServer.php] has been stopped
+2024-11-13 06:23:57 pid:80366 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-13 06:41:43 pid:80366 Workerman[WebSocketServer.php] stopping ...
+2024-11-13 06:41:44 pid:80366 Workerman[WebSocketServer.php] has been stopped

@@ -12,6 +12,7 @@ use Config\Maintenance;
 use App\Models\User\UserModels;
 use App\Models\SubMenu\SubMenuModels;
 
+use WebSocket\Client;
 class MaintenanceController extends BaseController
 {
 
@@ -125,19 +126,33 @@ class MaintenanceController extends BaseController
 
         // return "Workerman server started!";
 // Perintah yang akan dijalankan
-$command = 'bash workerman/run-server.sh';
+// $command = 'bash workerman/run-server.sh';
 
-// Menjalankan perintah dan menyimpan hasilnya
-$output = shell_exec($command);
+// // Menjalankan perintah dan menyimpan hasilnya
+// $output = shell_exec($command);
 
-// Menampilkan hasil output
-if ($output) {
-    echo "Versi PHP yang terinstal:<br>";
-    echo nl2br($output);  // Menggunakan nl2br untuk memformat output dengan baris baru
-} else {
-    echo "Gagal menjalankan perintah php -v.";
-}
-
+// // Menampilkan hasil output
+// if ($output) {
+//     echo "Versi PHP yang terinstal:<br>";
+//     echo nl2br($output);  // Menggunakan nl2br untuk memformat output dengan baris baru
+// } else {
+//     echo "Gagal menjalankan perintah php -v.";
+// }
+$this->sendToWebSocket('helloooo');
 
     }
+
+
+    private function sendToWebSocket($message)
+    {
+        // Kirim pesan ke WebSocket server
+        $client = new Client("ws://127.0.0.1:8080");  // Koneksi ke WebSocket server
+        $client->send($message);
+        $client->close();
+    }
+
+
+
 }
+
+
