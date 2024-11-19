@@ -30,7 +30,9 @@ class TestController extends BaseController {
                 
     }
 
-    public function index(){             
+    public function index(){      
+        
+        session()->set("token",5);
         $data = [
             "masterMenu" => "Master",
             "subMenu" => "Tanpa nama",

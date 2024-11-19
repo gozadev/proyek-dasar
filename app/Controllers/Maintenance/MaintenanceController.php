@@ -145,10 +145,15 @@ $this->sendToWebSocket('helloooo');
 
     private function sendToWebSocket($message)
     {
-        // Kirim pesan ke WebSocket server
-        $client = new Client("ws://127.0.0.1:8080");  // Koneksi ke WebSocket server
-        $client->send($message);
-        $client->close();
+          // Kirim pesan ke WebSocket server
+          $client = new Client("ws://127.0.0.1:8080");  // Koneksi ke WebSocket server
+          $data = array(          // ID client tujuan
+              'allMsg' => 'Halo, ini pesan dari server'  // Pesan yang ingin dikirim
+          );     
+          // Mengonversi array PHP menjadi string JSON
+          $msg = json_encode($data);
+          $client->send($msg);
+          $client->close();
     }
 
 

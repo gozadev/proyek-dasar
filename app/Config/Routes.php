@@ -30,6 +30,7 @@ $routes->get('akun-akses', 'Auth\AuthController::tidakAdaAkses',['filter' => 'au
 
 $routes->get('create-token', 'Auth\AuthController::createToken');
 
+
 // Route untuk dashboard 
 $routes->group('dashboard', ['filter' => 'authfilter'],  function ($routes) {
    $routes->get('/', 'Dashboard\DashboardController::index'); // halaman login admin

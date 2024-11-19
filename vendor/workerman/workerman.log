@@ -55,3 +55,452 @@ Stack trace:
 2024-11-13 06:23:57 pid:80366 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
 2024-11-13 06:41:43 pid:80366 Workerman[WebSocketServer.php] stopping ...
 2024-11-13 06:41:44 pid:80366 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 02:51:23 pid:3992 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 02:54:41 pid:3992 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 02:54:41 pid:3992 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 02:54:44 pid:4050 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 02:56:08 pid:4050 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 02:56:08 pid:4050 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 02:56:10 pid:4116 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 02:57:31 pid:4116 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 02:57:31 pid:4116 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 02:57:33 pid:4183 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 02:58:16 pid:4183 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 02:58:16 pid:4183 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 02:58:18 pid:4216 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:00:20 pid:4216 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:00:20 pid:4216 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:00:22 pid:4291 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:04:37 pid:4291 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:04:37 pid:4291 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:04:39 pid:4422 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:05:49 pid:4422 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:05:49 pid:4422 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:05:51 pid:4472 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:06:19 pid:4472 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:06:19 pid:4472 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:06:20 pid:4509 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:06:48 pid:4509 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:06:48 pid:4509 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:06:50 pid:4557 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:07:06 pid:4557 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:07:06 pid:4557 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:07:07 pid:4590 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:11:06 pid:4590 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:11:07 pid:4590 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:11:08 pid:4714 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:11:35 pid:4714 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:11:35 pid:4714 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:11:37 pid:4752 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:11:41 pid:4753 Error: Class "App\Helpers\jwt_helper" not found in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:66
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJpc...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(90): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 03:11:41 pid:4752 worker[none:4753] exit with status 64000
+2024-11-18 03:12:06 pid:4752 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:12:06 pid:4752 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:12:08 pid:4791 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:12:12 pid:4792 Error: Class "App\Helpers\jwt_helper" not found in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:66
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJpc...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(90): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 03:12:12 pid:4791 worker[none:4792] exit with status 64000
+2024-11-18 03:14:43 pid:4801 Error: Class "App\Helpers\jwt_helper" not found in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:66
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJpc...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1869): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1805): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(563): Workerman\Worker::monitorWorkers()
+#8 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(90): Workerman\Worker::runAll()
+#9 {main}
+2024-11-18 03:14:43 pid:4791 worker[none:4801] exit with status 64000
+2024-11-18 03:14:48 pid:4791 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:14:48 pid:4791 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:14:50 pid:4849 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:14:53 pid:4850 Error: Class "App\Helpers\jwt_helper" not found in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:66
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJpc...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(90): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 03:14:53 pid:4849 worker[none:4850] exit with status 64000
+2024-11-18 03:15:14 pid:4849 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:15:14 pid:4849 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:15:16 pid:4880 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:15:18 pid:4881 Error: Class "App\Helpers\jwt_helper" not found in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:66
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJpc...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(90): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 03:15:18 pid:4880 worker[none:4881] exit with status 64000
+2024-11-18 03:16:02 pid:4880 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:16:02 pid:4880 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:16:04 pid:4917 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:16:07 pid:4918 Error: Call to undefined function verifyToken() in /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php:67
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJpc...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php(90): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 03:16:07 pid:4917 worker[none:4918] exit with status 64000
+2024-11-18 03:22:22 pid:4917 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:22:22 pid:4917 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:22:41 pid:5052 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:23:13 pid:5052 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:23:13 pid:5052 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:23:15 pid:5098 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:24:10 pid:5098 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:24:10 pid:5098 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:24:12 pid:5154 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:24:37 pid:5154 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:24:37 pid:5154 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:24:39 pid:5198 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:25:26 pid:5198 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:25:26 pid:5198 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:25:27 pid:5236 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:26:46 pid:5236 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:26:46 pid:5236 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:26:47 pid:5300 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 03:27:52 pid:5300 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 03:27:53 pid:5300 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 03:27:54 pid:5336 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 05:49:18 pid:5336 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 05:49:18 pid:5336 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 05:56:54 pid:7570 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 05:57:09 pid:7570 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 05:57:09 pid:7570 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:00:26 pid:7676 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:01:19 pid:7676 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:01:19 pid:7676 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:01:21 pid:7718 Workerman[/Users/itdevaws/Sites/localhost/siap/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:01:53 pid:7718 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:01:53 pid:7718 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:11:31 pid:8065 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:12:05 pid:8065 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:12:05 pid:8065 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:12:08 pid:8108 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:12:14 pid:8109 Error: Call to undefined function CodeIgniter\Config\config() in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/Services.php:671
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(312): CodeIgniter\Config\Services::session(NULL, false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(321): CodeIgniter\Config\Services::session()
+#4 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(22): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#11 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(104): Workerman\Worker::runAll()
+#12 {main}
+2024-11-18 06:12:14 pid:8108 worker[none:8109] exit with status 64000
+2024-11-18 06:12:38 pid:8108 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:12:38 pid:8108 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:12:40 pid:8136 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:14:50 pid:8136 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:14:50 pid:8136 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:14:52 pid:8214 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:14:56 pid:8215 Error: Call to undefined function service() in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:22
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(104): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:14:56 pid:8214 worker[none:8215] exit with status 64000
+2024-11-18 06:17:39 pid:8214 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:17:39 pid:8214 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:17:41 pid:8296 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:17:44 pid:8297 Error: Call to undefined function CodeIgniter\Config\config() in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/Services.php:671
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(321): CodeIgniter\Config\Services::session(NULL, false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#3 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(22): CodeIgniter\Config\Services::session()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#10 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(104): Workerman\Worker::runAll()
+#11 {main}
+2024-11-18 06:17:44 pid:8296 worker[none:8297] exit with status 64000
+2024-11-18 06:19:38 pid:8296 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:19:38 pid:8296 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:19:39 pid:8354 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:19:43 pid:8355 Error: Call to undefined function CodeIgniter\Config\config() in /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/Services.php:671
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(312): CodeIgniter\Config\Services::session(NULL, false)
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/codeigniter4/framework/system/Config/BaseService.php(321): CodeIgniter\Config\Services::session()
+#4 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(22): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#8 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#11 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(104): Workerman\Worker::runAll()
+#12 {main}
+2024-11-18 06:19:43 pid:8354 worker[none:8355] exit with status 64000
+2024-11-18 06:21:51 pid:8354 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:21:51 pid:8354 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:21:52 pid:8409 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:21:56 pid:8410 Error: Call to undefined function service() in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:23
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(106): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:21:56 pid:8409 worker[none:8410] exit with status 64000
+2024-11-18 06:22:30 pid:8409 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:22:30 pid:8409 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:22:38 pid:8466 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer_helper.php] start in DEBUG mode
+2024-11-18 06:22:45 pid:8467 Error: Call to undefined function service() in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer_helper.php:23
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer_helper.php(106): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:22:45 pid:8466 worker[none:8467] exit with status 64000
+2024-11-18 06:38:40 pid:8466 Workerman[WebSocketServer_helper.php] stopping ...
+2024-11-18 06:38:40 pid:8466 Workerman[WebSocketServer_helper.php] has been stopped
+2024-11-18 06:38:41 pid:8721 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer_helper.php] start in DEBUG mode
+2024-11-18 06:38:48 pid:8722 Error: Call to undefined function service() in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer_helper.php:46
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer_helper.php(152): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:38:48 pid:8721 worker[none:8722] exit with status 64000
+2024-11-18 06:39:21 pid:8721 Workerman[WebSocketServer_helper.php] stopping ...
+2024-11-18 06:39:21 pid:8721 Workerman[WebSocketServer_helper.php] has been stopped
+2024-11-18 06:39:27 pid:8775 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:39:32 pid:8776 Error: Call to undefined function service() in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:46
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(152): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:39:32 pid:8775 worker[none:8776] exit with status 64000
+2024-11-18 06:39:50 pid:8785 Error: Call to undefined function service() in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:46
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(2664): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Worker->acceptConnection(Resource id #24)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1869): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1805): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(563): Workerman\Worker::monitorWorkers()
+#8 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(152): Workerman\Worker::runAll()
+#9 {main}
+2024-11-18 06:39:50 pid:8775 worker[none:8785] exit with status 64000
+2024-11-18 06:39:56 pid:8775 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:39:56 pid:8775 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:39:58 pid:8818 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:40:01 pid:8819 PDOException: SQLSTATE[HY000] [2002] No such file or directory in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:30
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(102): getDatabaseConnection()
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#7 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(152): Workerman\Worker::runAll()
+#8 {main}
+2024-11-18 06:40:01 pid:8818 worker[none:8819] exit with status 64000
+2024-11-18 06:40:51 pid:8818 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:40:51 pid:8818 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:40:53 pid:8861 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:40:57 pid:8862 PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_siap.users' doesn't exist in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:103
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(103): PDO->prepare('SELECT user_id ...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#7 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(152): Workerman\Worker::runAll()
+#8 {main}
+2024-11-18 06:40:57 pid:8861 worker[none:8862] exit with status 64000
+2024-11-18 06:41:22 pid:8861 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:41:22 pid:8861 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:41:23 pid:8886 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:43:21 pid:8886 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:43:21 pid:8886 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:43:23 pid:8961 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:45:12 pid:8961 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:45:12 pid:8961 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:45:14 pid:9107 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:45:18 pid:9109 PDOException: SQLSTATE[HY093]: Invalid parameter number in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:99
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(99): PDOStatement->bindParam(':token', 'eyJ0eXAiOiJKV1Q...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#7 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(148): Workerman\Worker::runAll()
+#8 {main}
+2024-11-18 06:45:18 pid:9107 worker[none:9109] exit with status 64000
+2024-11-18 06:45:34 pid:9107 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:45:34 pid:9107 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:45:35 pid:9140 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:45:39 pid:9141 Error: PDOStatement::bindParam(): Argument #2 ($var) could not be passed by reference in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:99
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(148): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:45:39 pid:9140 worker[none:9141] exit with status 64000
+2024-11-18 06:46:05 pid:9140 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:46:05 pid:9140 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:46:06 pid:9174 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:46:10 pid:9175 Error: PDOStatement::bindParam(): Argument #2 ($var) could not be passed by reference in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:99
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(148): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:46:10 pid:9174 worker[none:9175] exit with status 64000
+2024-11-18 06:46:23 pid:9174 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:46:23 pid:9174 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:46:24 pid:9200 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:46:26 pid:9201 Error: PDOStatement::bindParam(): Argument #2 ($var) could not be passed by reference in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:99
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(148): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:46:26 pid:9200 worker[none:9201] exit with status 64000
+2024-11-18 06:48:32 pid:9200 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:48:32 pid:9200 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:48:33 pid:9285 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:48:37 pid:9286 PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_siap.users' doesn't exist in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:98
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(98): PDO->prepare('SELECT user_id ...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#6 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#7 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(149): Workerman\Worker::runAll()
+#8 {main}
+2024-11-18 06:48:37 pid:9285 worker[none:9286] exit with status 64000
+2024-11-18 06:48:50 pid:9285 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:48:50 pid:9285 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:48:51 pid:9310 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 06:48:54 pid:9311 Error: Undefined constant PDO::FETCH_ASSO in /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php:102
+Stack trace:
+#0 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Connection/TcpConnection.php(646): {closure}(Object(Workerman\Connection\TcpConnection), '{"token":"eyJ0e...')
+#1 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Events/Select.php(311): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#2 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1719): Workerman\Events\Select->loop()
+#3 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1510): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(1484): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/itdevaws/Sites/localhost/siap/vendor/workerman/workerman/Worker.php(561): Workerman\Worker::forkWorkers()
+#6 /Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php(149): Workerman\Worker::runAll()
+#7 {main}
+2024-11-18 06:48:54 pid:9310 worker[none:9311] exit with status 64000
+2024-11-18 06:50:20 pid:9310 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 06:50:20 pid:9310 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 06:50:21 pid:9439 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 07:40:35 pid:9439 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 07:40:35 pid:9439 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 07:40:37 pid:10510 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 07:44:57 pid:10510 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 07:44:57 pid:10510 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 07:44:58 pid:10677 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-18 07:47:16 pid:10677 Workerman[WebSocketServer.php] stopping ...
+2024-11-18 07:47:16 pid:10677 Workerman[WebSocketServer.php] has been stopped
+2024-11-18 07:47:18 pid:10745 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 01:27:45 pid:10745 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 01:27:45 pid:10745 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 01:28:57 pid:12258 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 01:32:54 pid:12258 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 01:32:54 pid:12258 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 01:34:00 pid:12379 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 01:35:49 pid:12379 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 01:35:49 pid:12379 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 01:36:41 pid:12443 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 01:38:29 pid:12443 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 01:38:29 pid:12443 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 01:38:35 pid:12508 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 01:44:17 pid:12508 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 01:44:18 pid:12508 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 01:44:21 pid:12571 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 02:10:00 pid:12571 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 02:10:00 pid:12571 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 02:10:13 pid:12952 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 02:29:31 pid:12952 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 02:29:31 pid:12952 Workerman[WebSocketServer.php] has been stopped
+2024-11-19 02:29:46 pid:13534 Workerman[/Users/itdevaws/Sites/localhost/siap/app/Helpers/workerman/WebSocketServer.php] start in DEBUG mode
+2024-11-19 02:45:10 pid:13534 Workerman[WebSocketServer.php] stopping ...
+2024-11-19 02:45:10 pid:13534 Workerman[WebSocketServer.php] has been stopped

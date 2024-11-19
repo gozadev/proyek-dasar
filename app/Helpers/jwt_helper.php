@@ -2,7 +2,7 @@
 use Lcobucci\JWT\Configuration;
 use Lcobucci\JWT\Signer\Hmac\Sha256;
 use Lcobucci\JWT\Signer\Key\InMemory;
-use DateTimeImmutable;
+//use DateTimeImmutable;
 use Lcobucci\JWT\Token\Plain;
 use Lcobucci\JWT\Validation\Constraint\SignedWith;
 
@@ -25,7 +25,7 @@ function createToken()
         );
 
         // Data klaim yang ingin ditambahkan ke token
-        $now = new DateTimeImmutable();
+        $now =  new DateTimeImmutable();
         $userId = 1; // Misalnya ID pengguna dari database
         $username = 'user_example'; // Username pengguna
 
@@ -35,7 +35,7 @@ function createToken()
             ->permittedFor('http://localhost')        // Audience claim (aud)
             ->identifiedBy('4f1g23a12aa', true)       // ID unik token
             ->issuedAt($now)                          // Waktu diterbitkan (iat)
-            ->expiresAt($now->modify('+1 hour'))      // Waktu kadaluwarsa (exp)
+           ->expiresAt($now->modify('+1 hour'))      // Waktu kadaluwarsa (exp)
             ->withClaim('userId', $userId)            // Custom claim: userId
             ->withClaim('username', $username)        // Custom claim: username
             ->getToken($config->signer(), $config->signingKey());
@@ -47,7 +47,7 @@ function createToken()
     
     }
 
-    function verifyToken($jwt)
+    function verifyTokenx($jwt)
     {
         try {
             // Inisialisasi konfigurasi JWT dengan HMAC-SHA256
@@ -75,3 +75,31 @@ function createToken()
             return false;
         }
     }
+
+    function verifyToken($jwt)
+{
+    try {
+        // Inisialisasi konfigurasi JWT dengan HMAC-SHA256
+        $config = Configuration::forSymmetricSigner(
+            new Sha256(),
+            InMemory::plainText('5f21f4a9ee1c79257afe56d1ba315e7c570912611471209bea79638cce94415e')
+        );
+
+        // Parse token
+        $token = $config->parser()->parse($jwt);
+
+        // Validasi token
+        $constraints = [
+            new SignedWith($config->signer(), $config->signingKey()), // Validasi tanda tangan
+        ];
+
+        if (!$config->validator()->validate($token, ...$constraints)) {
+            return false; // Token tidak valid
+        }
+
+        return $token; // Token valid, kembalikan token untuk digunakan lebih lanjut
+    } catch (\Throwable $e) {
+        // Token tidak dapat diparse atau verifikasi gagal
+        return false;
+    }
+}

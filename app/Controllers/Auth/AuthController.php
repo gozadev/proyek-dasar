@@ -277,42 +277,42 @@ class AuthController extends BaseController
     public function createToken()
     {
     //    // Memanggil fungsi createToken dari helper
-    //    $token = createToken();
+       $token = createToken();
 
-    //    // Mengembalikan token sebagai JSON response
-    //    return $this->response->setJSON([
-    //        'status' => 'success',
-    //        'token' => $token,
-    //    ]);
+       // Mengembalikan token sebagai JSON response
+       return $this->response->setJSON([
+           'status' => 'success',
+           'token' => $token,
+       ]);
 
  // Verifikasi token
- $verifiedToken = verifyToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgzODAzLjIzODQ1OCwiZXhwIjoxNzMxNDg3NDAzLjIzODQ1OCwidXNlcklkIjoxLCJ1c2VybmFtZSI6InVzZXJfZXhhbXBsZSJ9.Pkx3lel0K1VApyABiEMrccqDuKyfGwZ953qvlYL1rnE");
+//  $verifiedToken = verifyToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjaTQtd2Vic29ja2V0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdCIsImp0aSI6IjRmMWcyM2ExMmFhIiwiaWF0IjoxNzMxNDgzODAzLjIzODQ1OCwiZXhwIjoxNzMxNDg3NDAzLjIzODQ1OCwidXNlcklkIjoxLCJ1c2VybmFtZSI6InVzZXJfZXhhbXBsZSJ9.Pkx3lel0K1VApyABiEMrccqDuKyfGwZ953qvlYL1rnE");
             
 // Verifikasi token
 //$verifiedToken = verifyToken($token);
             
-if ($verifiedToken) {
-    // Token valid, dapatkan klaim
-    $claims = $verifiedToken->claims(); // Ambil semua klaim
+// if ($verifiedToken) {
+//     // Token valid, dapatkan klaim
+//     $claims = $verifiedToken->claims(); // Ambil semua klaim
 
-    // Ambil klaim userId dan username
-    $userId = $claims->get('userId');
-    $username = $claims->get('username');
+//     // Ambil klaim userId dan username
+//     $userId = $claims->get('userId');
+//     $username = $claims->get('username');
     
-    // Lakukan tindakan yang diinginkan
-    return $this->response->setJSON([
-        'status' => 'success',
-        'message' => 'Token valid!',
-        'userId' => $userId,
-        'username' => $username,
-    ]);
-} else {
-    // Token tidak valid
-    return $this->response->setJSON([
-        'status' => 'error',
-        'message' => 'Token tidak valid atau kadaluarsa.',
-    ]);
-}
+//     // Lakukan tindakan yang diinginkan
+//     return $this->response->setJSON([
+//         'status' => 'success',
+//         'message' => 'Token valid!',
+//         'userId' => $userId,
+//         'username' => $username,
+//     ]);
+// } else {
+//     // Token tidak valid
+//     return $this->response->setJSON([
+//         'status' => 'error',
+//         'message' => 'Token tidak valid atau kadaluarsa.',
+//     ]);
+// }
 
 
 
